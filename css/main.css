@@ -361,3 +361,35 @@ Navbar
   }
 }
 
+/*
+=============== 
+Main page
+===============
+*/
+.page{
+  background-color: red;
+}
+
+
+/*
+=============== 
+Footer
+===============
+*/
+.page-footer{
+  height: 4rem;
+  background-color: var(--grey-900);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer p{
+  margin: 0 ;
+}
+
+.footer-logo , .page-footer a{
+  color: var(--primary-500);
+}
+
