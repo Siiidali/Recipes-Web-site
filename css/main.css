@@ -264,6 +264,7 @@ Navbar
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--backgroundColor)
 }
 .nav-centre{
   width: 90vw;
@@ -374,7 +375,6 @@ Main page
   min-height: calc(100vh - (6rem+4rem));
 }
 
-
 /*
 =============== 
 Footer
@@ -407,7 +407,7 @@ Hero
   background: url("../assets/main.jpeg") center/cover no-repeat;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
-  position: relative;
+  position: relative; 
 }
 
 .hero-container{
@@ -433,4 +433,71 @@ Hero
     font-size: 4rem;
     margin-bottom: 0;
   }
+}
+
+/*
+=============== 
+Recipes
+===============
+*/
+.recipes-container{
+  display: grid;
+  gap: 2rem 1rem;
+}
+
+.tags-container{
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.recipes-list{
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+
+.tags-container h4{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.tags-list{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tags-list a{
+  text-transform: capitalize;
+  display: block;
+  color: var(--grey-500);
+  transition: var(--transition);
+}
+
+.tags-list a:hover{
+  color: var(--primary-500);
+}
+
+.recipe{
+  display: block;
+}
+
+.recipe img{
+  height: 17rem;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1rem;
+}
+
+.recipe h5{
+  margin-bottom: 0;
+  line-height: 1;
+  color: var(--grey-700);
+}
+
+.recipe p{
+  margin-bottom: 0;
+  line-height: 1;
+  margin-top: 0.5rem;
+  color: var(--grey-500);
 }
