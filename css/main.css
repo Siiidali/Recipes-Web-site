@@ -501,3 +501,49 @@ Recipes
   margin-top: 0.5rem;
   color: var(--grey-500);
 }
+
+@media screen and (min-width: 576px) {
+  .recipes-list{
+    grid-template-columns: 1fr 1fr;
+  }
+  .recipe-img{
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .recipes-container{
+    grid-template-columns: 200px 1fr ;
+  }
+  .recipe p{
+    font-size: 0.85rem;
+  }
+  .tags-container{
+    order: 0;
+  }
+  .tags-list{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .recipes-list{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .recipe h5{
+    font-size: 1.15rem;
+  }
+}
+
+/*
+=============== 
+Error
+===============
+*/
+.error-page{
+  text-align: center;
+  padding-top: 5rem;
+}
+.error-page h1{
+  font-size: 9rem;
+}
